@@ -10,8 +10,8 @@ document.getElementById('cekresi').addEventListener('submit', (event) => {
     if (!mresi) {
         console.log("Harap isi no resi");
         alert("Harap isi no resi");
-    } else if (mresi.length < 12) {
-        console.log("Maksimal no resi 12");
+    } else if (mresi.length < 11) {
+        console.log("Minimal no resi 12");
         alert("Maksimal no resi 12");
     } else {
         var moutput = document.getElementById("output");

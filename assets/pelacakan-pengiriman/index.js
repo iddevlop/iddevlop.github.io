@@ -12,7 +12,7 @@ document.getElementById('cekresi').addEventListener('submit', (event) => {
         alert("Harap isi no resi");
     } else if (mresi.length < 11) {
         console.log("Minimal no resi 12");
-        alert("Maksimal no resi 12");
+        alert("Minimal no resi 12");
     } else {
         var moutput = document.getElementById("output");
         var miframe = document.createElement("iframe"); 

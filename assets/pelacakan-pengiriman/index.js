@@ -32,6 +32,14 @@ span.onclick = function() {
     modal.style.display = "none";
 }
 
+var unique = "iddevlop.github.io";
+if (window.location.hostname == unique) {
+    // alert("Sukses");
+} else {
+    alert("This site active for id-devlop.web.app, We can sue you!");
+    window.location.href = myUrl;
+}
+
 window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";

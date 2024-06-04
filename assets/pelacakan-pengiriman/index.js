@@ -46,16 +46,21 @@ span.onclick = function() {
     }
 }
 
+var mhost = window.location.hostname;
 var unique = "iddevlop.github.io";
-if (window.location.hostname == unique) {
+var uniquee = "sbe-idn.com";
+if (mhost == unique || mhost == uniquee) {
     // alert("Sukses");
 } else {
-    alert("This site active for id-devlop.web.app, We can sue you!");
+    alert("This site active for request!");
     window.location.href = myUrl;
 }
 
 window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
+        if (document.getElementById("xiframe")) {
+            document.getElementById("xiframe").remove();
+        }
     }
 }

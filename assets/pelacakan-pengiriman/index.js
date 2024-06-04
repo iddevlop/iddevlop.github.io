@@ -8,8 +8,11 @@ document.getElementById('cekresi').addEventListener('submit', (event) => {
     event.preventDefault();
     var mresi = document.getElementById('noresi').value;
     if (!mresi) {
-        console.log("Data tidak di temukan");
-        alert("Data tidak di temukan");
+        console.log("Harap isi no resi");
+        alert("Harap isi no resi");
+    } else if (mresi < 12) {
+        console.log("Maksimal no resi 12");
+        alert("Maksimal no resi 12");
     } else {
         var moutput = document.getElementById("output");
         var miframe = document.createElement("iframe"); 

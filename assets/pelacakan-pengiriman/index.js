@@ -1,3 +1,5 @@
+var myUrl = "https://iddevlop.github.io/assets/pelacakan-pengiriman/";
+
 document.getElementById('cekresi').addEventListener('submit', (event) => {
     event.preventDefault();
     var mresi = document.getElementById('noresi').value;

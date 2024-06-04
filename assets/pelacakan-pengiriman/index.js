@@ -1,5 +1,9 @@
 var myUrl = "https://iddevlop.github.io/assets/pelacakan-pengiriman/";
 
+var modal = document.getElementById("myModal");
+
+// var btn = document.getElementById("myBtn");
+
 document.getElementById('cekresi').addEventListener('submit', (event) => {
     event.preventDefault();
     var mresi = document.getElementById('noresi').value;
@@ -16,24 +20,27 @@ document.getElementById('cekresi').addEventListener('submit', (event) => {
         miframe.src = mcurl;
 
         moutput.appendChild(miframe);
+        
+        modal.style.display = "block";
     }
 });
 
-var modal = document.getElementById("myModal");
-
-var btn = document.getElementById("myBtn");
 
 var span = document.getElementsByClassName("close")[0];
 
+/*
 btn.onclick = function() {
-    modal.style.display = "block";
     if (document.getElementById("xiframe")) {
         document.getElementById("xiframe").remove();
-    }
+    }  
 }
+*/
 
 span.onclick = function() {
     modal.style.display = "none";
+    if (document.getElementById("xiframe")) {
+        document.getElementById("xiframe").remove();
+    }
 }
 
 var unique = "iddevlop.github.io";
